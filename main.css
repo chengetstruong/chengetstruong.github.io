@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'northwell';
+  src: url('../fonts/northwell-alt.ttf') format('truetype');
+}
+* {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  margin-bottom: 8px;
+  line-height: 1.8;
+}
+@media only screen and (max-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+}
+a:hover {
+  text-decoration: none;
+}
+.rsvp {
+  border: 3px solid;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  padding: 8px 32px 7px 32px;
+  background: none;
+  margin: 24px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  border-radius: 2px;
+}
+.rsvp:hover {
+  color: black;
+}
+.home {
+  background-image: url("img/home.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+@media only screen and (max-width: 768px) {
+  .home {
+    background-size: auto 100%;
+  }
+}
+.wedding {
+  background-image: url("img/wedding.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  .wedding {
+    background-size: auto 100%;
+  }
+}
+.wedding .link {
+  display: inline-block;
+  margin: 16px;
+}
+.wedding .link a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.wedding .rsvp {
+  color: white;
+}
+.wedding .rsvp:hover {
+  color: white;
+}
+.details .event {
+  margin-bottom: 24px;
+  border-right: 1px solid #eaeaea;
+}
+.details .event:last-child {
+  border-right: none;
+}
+.details .event img {
+  width: 72px;
+}
+@media only screen and (max-width: 768px) {
+  .details .event img {
+    width: 48px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .details .event .time {
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .details .event .to-do {
+    display: inline-block;
+  }
+}
+.people .item img {
+  width: 100%;
+  border-radius: 100%;
+}
+.people .item .name {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+@media only screen and (max-width: 576px) {
+  .people .item img {
+    display: none;
+  }
+  .people .item .name {
+    opacity: 1;
+    color: black;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    font-size: 20px;
+  }
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title-row {
+  margin-bottom: 16px;
+}
+.big-title {
+  font-family: 'northwell', 'Rochester', cursive;
+  font-size: 108px;
+}
+.small-title {
+  font-family: 'northwell', 'Rochester', cursive;
+  font-size: 72px;
+}
+.title-icon img {
+  width: 32px;
+  margin: auto 32px;
+}
+.display-control {
+  display: inline-block;
+}
+@media only screen and (max-width: 700px) {
+  .display-control {
+    display: block;
+  }
+  .title-row {
+    margin-bottom: 24px;
+  }
+  .title-icon img {
+    width: 20px;
+  }
+  .big-title {
+    font-size: 72px;
+  }
+}
