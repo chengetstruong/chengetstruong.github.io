@@ -7,6 +7,7 @@
   font-size: 18px;
   margin-bottom: 8px;
   line-height: 1.8;
+  color: #232323;
 }
 @media only screen and (max-width: 768px) {
   * {
@@ -26,12 +27,12 @@ a:hover {
   background: none;
   margin: 24px;
   text-decoration: none;
-  color: black;
+  color: #232323;
   display: inline-block;
   border-radius: 2px;
 }
 .rsvp:hover {
-  color: black;
+  color: #232323;
 }
 .home {
   background-image: url("img/home.jpg");
@@ -47,31 +48,29 @@ a:hover {
   background-image: url("img/wedding.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  color: white;
 }
 @media only screen and (max-width: 768px) {
   .wedding {
     background-size: auto 100%;
   }
 }
+.wedding * {
+  color: #ffffff;
+}
 .wedding .link {
   display: inline-block;
   margin: 16px;
 }
 .wedding .link a {
-  color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 16px;
-}
-.wedding .rsvp {
-  color: white;
 }
 .wedding .rsvp:hover {
   color: white;
 }
 .details .event {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   border-right: 1px solid #eaeaea;
 }
 .details .event:last-child {
@@ -112,12 +111,12 @@ a:hover {
   }
   .people .item .name {
     opacity: 1;
-    color: black;
+    color: #232323;
     position: relative;
     top: auto;
     left: auto;
     transform: none;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .container {
@@ -136,6 +135,8 @@ a:hover {
 .small-title {
   font-family: 'northwell', 'Rochester', cursive;
   font-size: 72px;
+  line-height: 1;
+  margin-top: 16px;
 }
 .title-icon img {
   width: 32px;
