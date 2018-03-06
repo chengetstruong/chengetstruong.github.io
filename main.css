@@ -116,7 +116,7 @@ a:hover {
   .details .event .time {
     display: inline-block;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .details .event .to-do {
@@ -125,7 +125,7 @@ a:hover {
 @media only screen and (max-width: 768px) {
   .details .event .to-do {
     display: inline-block;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 768px) {
