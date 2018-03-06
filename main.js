@@ -1,3 +1,5 @@
 $('#fullpage').fullpage({
-	navigation: true
+	navigation: true,
+	scrollOverflow: true,
+	scrollingSpeed: 700,
 });
