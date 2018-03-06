@@ -27,12 +27,12 @@ a:hover {
   text-decoration: none;
 }
 .rsvp {
-  border: 3px solid;
+  border: 2px solid;
   font-family: 'Maven Pro', sans-serif;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 4px;
-  padding: 8px 32px 7px 32px;
+  padding: 4px 32px 3px 32px;
   background: none;
   margin: 24px;
   text-decoration: none;
@@ -79,7 +79,10 @@ a:hover {
   font-family: 'Maven Pro', sans-serif;
   text-transform: uppercase;
   font-size: 16px;
-  letter-spacing: 1;
+  letter-spacing: 2;
+}
+.wedding .link a:hover {
+  color: white;
 }
 .wedding .rsvp:hover {
   color: white;
@@ -125,7 +128,11 @@ a:hover {
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 768px) {
+.people {
+  background: #2d3b82;
+}
+.people .small-title {
+  color: white;
 }
 .people .item {
   margin-bottom: 16px;
@@ -146,6 +153,13 @@ a:hover {
 }
 .people .item .name {
   font-size: 16px;
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  .people .item .name {
+    font-size: 18px;
+    letter-spacing: 1;
+  }
 }
 .container {
   position: absolute;
@@ -163,9 +177,18 @@ a:hover {
 }
 .small-title {
   font-family: 'northwell', 'Rochester', cursive;
-  font-size: 72px;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 56px;
   line-height: 1.5;
   margin-top: 16px;
+  letter-spacing: 3;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+  .small-title {
+    font-size: 36px;
+  }
 }
 .title-icon img {
   width: 32px;

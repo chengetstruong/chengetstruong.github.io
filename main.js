@@ -1,1 +1,3 @@
-$('#fullpage').fullpage();
+$('#fullpage').fullpage({
+	navigation: true
+});
