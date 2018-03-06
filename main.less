@@ -3,15 +3,23 @@
     src: ~"url('../fonts/northwell-alt.ttf') format('truetype')";
 }
 
-@primary-dark: #232323;
+@primary-dark: #3a3a3a;
 @primary-white: #ffffff;
 
 * {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Goudy Bookletter 1911', serif;
     font-size: 18px;
     margin-bottom: 8px;
     line-height: 1.8;
     color: @primary-dark;
+    @media only screen and (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.info {
+    font-size: 20px;
+    letter-spacing: 1;
     @media only screen and (max-width: 768px) {
         font-size: 16px;
     }
@@ -25,7 +33,7 @@ a {
 
 .rsvp {
     border: 3px solid;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 4px;
@@ -51,25 +59,34 @@ a {
     }
 }
 
+.story {
+    .emoji {
+        width: 24px;
+        margin-right: 8px;
+        margin-top: 4px;
+    }
+}
+
 .wedding {
     background-image: url("img/wedding.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
-    
+
+
     @media only screen and (max-width: 768px) {
         background-size: auto 100%;
     }
-    *{
+    * {
         color: @primary-white;
     }
     .link {
         display: inline-block;
         margin: 16px;
         a {
-            // color: white;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            font-family: 'Maven Pro', sans-serif;
+            text-transform: uppercase; // letter-spacing: 1px;
             font-size: 16px;
+            letter-spacing: 1;
         }
     }
     .rsvp {
@@ -82,61 +99,73 @@ a {
 .details {
 
     .event {
+        letter-spacing: 1;
         margin-bottom: 12px;
         border-right: 1px solid #eaeaea;
         &:last-child {
             border-right: none;
-        } 
+        }
         img {
-            width: 72px;
+            margin-bottom: 16px;
+            width: 96px;
+            @media only screen and (max-width: 1000px) {
+                width: 64px;
+            }
             @media only screen and (max-width: 768px) {
-                width: 48px;
+                width: 56px;
+                margin-bottom: 8px;
             }
         }
-
-
         .time {
+            font-weight: 700;
+            color: #999;
+            margin-bottom: 0px;
             @media only screen and (max-width: 768px) {
                 display: inline-block;
+                font-weight: 400;
+                font-size: 14px;
             }
         }
         .to-do {
+            text-transform: uppercase;
+
             @media only screen and (max-width: 768px) {
                 display: inline-block;
+                font-size: 14px;
             }
         }
     }
 }
 
 .people {
+    @media only screen and (max-width: 768px) {
+        // margin-left: 16px;
+        // margin-right: 16px;
+    }
     .item {
+        margin-bottom: 16px;
         img {
-            width: 100%;
+            width: 128px;
             border-radius: 100%;
-        }
-        .name {
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            transform: translateX(-50%);
-            color: white;
-        } 
-        @media only screen and (max-width: 576px) {
-            img {
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+            }
+            @media only screen and (max-width: 576px) {
                 display: none;
             }
-            .name {
-                opacity: 1;
-                color: @primary-dark;
-                position: relative;
-                top: auto;
-                left: auto;
-                transform: none;
-                font-size: 16px;
-            }
+        }
+
+
+        .name {
+            font-size: 16px;
         }
     }
 }
+
+
+
+
+
 
 .container {
     position: absolute;
@@ -152,12 +181,13 @@ a {
 .big-title {
     font-family: 'northwell', 'Rochester', cursive;
     font-size: 108px;
+    line-height: 1.5;
 }
 
 .small-title {
     font-family: 'northwell', 'Rochester', cursive;
     font-size: 72px;
-    line-height: 1;
+    line-height: 1.5;
     margin-top: 16px;
 }
 
