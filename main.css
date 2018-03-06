@@ -7,7 +7,7 @@
   font-size: 18px;
   margin-bottom: 8px;
   line-height: 1.8;
-  color: #3a3a3a;
+  color: #03144c;
 }
 @media only screen and (max-width: 768px) {
   * {
@@ -36,12 +36,12 @@ a:hover {
   background: none;
   margin: 24px;
   text-decoration: none;
-  color: #3a3a3a;
+  color: #03144c;
   display: inline-block;
   border-radius: 2px;
 }
 .rsvp:hover {
-  color: #3a3a3a;
+  color: #03144c;
 }
 .home {
   background-image: url("img/home.jpg");
@@ -95,6 +95,11 @@ a:hover {
 .details .event:last-child {
   border-right: none;
 }
+@media only screen and (max-width: 768px) {
+  .details .event {
+    border-right: none;
+  }
+}
 .details .event img {
   margin-bottom: 16px;
   width: 96px;
@@ -129,10 +134,7 @@ a:hover {
   }
 }
 .people {
-  background: #2d3b82;
-}
-.people .small-title {
-  color: white;
+  background: #fef0f2;
 }
 .people .item {
   margin-bottom: 32px;
@@ -162,9 +164,10 @@ a:hover {
   position: absolute;
   bottom: 12px;
   right: 8px;
-  background: rgba(58, 58, 58, 0.5);
+  background: rgba(3, 20, 76, 0.8);
   padding: 0px 12px;
   letter-spacing: 1px;
+  border-radius: 2px;
 }
 @media only screen and (max-width: 576px) {
   .people .item .name {

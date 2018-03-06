@@ -3,11 +3,12 @@
     src: ~"url('../fonts/northwell-alt.ttf') format('truetype')";
 }
 
-@primary-dark: #3a3a3a;
+@primary-dark: #03144c;
 @primary-white: #ffffff;
 
 * {
     font-family: 'Goudy Bookletter 1911', serif;
+    // font-family: 'Sorts Mill Goudy', serif;
     font-size: 18px;
     margin-bottom: 8px;
     line-height: 1.8;
@@ -108,6 +109,9 @@ a {
         &:last-child {
             border-right: none;
         }
+        @media only screen and (max-width: 768px) {
+            border-right: none;
+        }
         img {
             margin-bottom: 16px;
             width: 96px;
@@ -140,9 +144,9 @@ a {
 }
 
 .people {
-    background: #2d3b82;
+    background: #fef0f2;
     .small-title {
-        color: white;
+        // color: white;
     }
     .item {
         margin-bottom: 32px;
@@ -165,9 +169,10 @@ a {
             position: absolute;
             bottom: 12px;
             right: 8px;
-            background: fade(@primary-dark, 50%);
+            background: fade(@primary-dark, 80%);
             padding: 0px 12px;
             letter-spacing: 1px;
+            border-radius: 2px;
             @media only screen and (max-width: 576px) {
                 font-size: 18px;
                 letter-spacing: 1;
