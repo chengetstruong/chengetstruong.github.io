@@ -135,11 +135,11 @@ a:hover {
   color: white;
 }
 .people .item {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 .people .item img {
-  width: 128px;
-  border-radius: 100%;
+  width: 160px;
+  border-radius: 4px;
 }
 @media only screen and (max-width: 1024px) {
   .people .item img {
@@ -151,14 +151,30 @@ a:hover {
     display: none;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .people .item {
+    margin-bottom: 16px;
+  }
+}
 .people .item .name {
   font-size: 16px;
   color: white;
+  position: absolute;
+  bottom: 12px;
+  right: 8px;
+  background: rgba(58, 58, 58, 0.5);
+  padding: 0px 12px;
+  letter-spacing: 1px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
   .people .item .name {
     font-size: 18px;
     letter-spacing: 1;
+    position: relative;
+    bottom: auto;
+    right: auto;
+    background: none;
+    padding: auto;
   }
 }
 .container {

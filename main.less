@@ -145,10 +145,10 @@ a {
         color: white;
     }
     .item {
-        margin-bottom: 16px;
+        margin-bottom: 32px;
         img {
-            width: 128px;
-            border-radius: 100%;
+            width: 160px;
+            border-radius: 4px;
             @media only screen and (max-width: 1024px) {
                 width: 100%;
             }
@@ -156,14 +156,28 @@ a {
                 display: none;
             }
         }
+        @media only screen and (max-width: 1024px) {
+            margin-bottom: 16px;
+        }
 
 
         .name {
             font-size: 16px;
             color: white;
-            @media only screen and (max-width: 768px) {
+            position: absolute;
+            bottom: 12px;
+            right: 8px;
+            background: fade(@primary-dark, 50%);
+            padding: 0px 12px;
+            letter-spacing: 1px;
+            @media only screen and (max-width: 576px) {
                 font-size: 18px;
                 letter-spacing: 1;
+                position: relative;
+                bottom: auto;
+                right: auto;
+                background: none;
+                padding: auto;
             }
         }
     }
