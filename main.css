@@ -119,9 +119,6 @@ a:hover {
     font-size: 16px;
   }
 }
-.details .event .to-do {
-  text-transform: uppercase;
-}
 @media only screen and (max-width: 768px) {
   .details .event .to-do {
     display: inline-block;
