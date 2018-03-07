@@ -55,8 +55,31 @@ a:hover {
 }
 .story .emoji {
   width: 24px;
-  margin-right: 8px;
+  margin-right: 4px;
+  margin-left: 4px;
   margin-top: 4px;
+}
+.link {
+  display: inline-block;
+  margin: 0px 16px;
+}
+@media only screen and (max-width: 768px) {
+  .link {
+    margin: 8px 16px;
+  }
+}
+.link a {
+  padding: 2px 8px 1px 8px;
+  font-weight: 500;
+  font-family: 'Maven Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2;
+  color: #03144c;
+  border-bottom: 3px solid;
+}
+.link a:hover {
+  color: #03144c;
 }
 .wedding {
   background-image: url("img/wedding.jpg");
@@ -71,18 +94,13 @@ a:hover {
 .wedding * {
   color: #ffffff;
 }
-.wedding .link {
-  display: inline-block;
-  margin: 16px;
-}
 .wedding .link a {
-  font-family: 'Maven Pro', sans-serif;
-  text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 2;
+  border-bottom: 3px solid #ffffff;
+  color: #ffffff;
 }
 .wedding .link a:hover {
-  color: white;
+  color: #03144c;
+  background: white;
 }
 .wedding .rsvp:hover {
   color: white;
@@ -117,7 +135,7 @@ a:hover {
 }
 .details .event .time {
   font-weight: 700;
-  color: #999;
+  color: #91a1d4;
   margin-bottom: 0px;
 }
 @media only screen and (max-width: 768px) {
@@ -134,7 +152,7 @@ a:hover {
   }
 }
 .people {
-  background: #fef0f2;
+  background: #fdf6f7;
 }
 .people .item {
   margin-bottom: 32px;
@@ -163,7 +181,7 @@ a:hover {
   color: white;
   position: absolute;
   bottom: 12px;
-  right: 8px;
+  right: 24px;
   background: rgba(3, 20, 76, 0.8);
   padding: 0px 12px;
   letter-spacing: 1px;
@@ -181,11 +199,12 @@ a:hover {
     color: #03144c;
   }
 }
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.information .link a {
+  border-bottom: 3px solid #91a1d4;
+}
+.information .link a:hover {
+  background: #91a1d4;
+  color: #ffffff;
 }
 .title-row {
   margin-bottom: 16px;
@@ -196,13 +215,12 @@ a:hover {
   line-height: 1.5;
 }
 .small-title {
-  font-family: 'northwell', 'Rochester', cursive;
   font-family: 'Maven Pro', sans-serif;
   font-size: 56px;
   line-height: 1.5;
   margin-top: 16px;
-  letter-spacing: 3;
-  font-weight: 700;
+  letter-spacing: 5;
+  font-weight: 500;
   text-transform: uppercase;
 }
 @media only screen and (max-width: 768px) {
@@ -210,9 +228,26 @@ a:hover {
     font-size: 36px;
   }
 }
+.xsmall-title {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 32px;
+  line-height: 1.5;
+  margin-top: 16px;
+  letter-spacing: 2;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+  .xsmall-title {
+    font-size: 24px;
+  }
+}
 .title-icon img {
   width: 32px;
   margin: auto 32px;
+}
+.light-text {
+  color: #91a1d4;
 }
 .display-control {
   display: inline-block;
