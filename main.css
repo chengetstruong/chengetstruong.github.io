@@ -14,6 +14,22 @@
     font-size: 16px;
   }
 }
+.footer {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #91a1d4;
+  position: absolute;
+  bottom: 24px;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footer img {
+  height: 14px;
+  text-align: center;
+  margin-bottom: 2px;
+}
 .info {
   font-size: 20px;
   letter-spacing: 1;
@@ -48,7 +64,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .home {
     background-size: auto 100%;
   }
@@ -61,7 +77,7 @@ a:hover {
 }
 .link {
   display: inline-block;
-  margin: 0px 16px;
+  margin: 16px;
 }
 @media only screen and (max-width: 768px) {
   .link {
@@ -86,7 +102,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .wedding {
     background-size: auto 100%;
   }
@@ -176,6 +192,14 @@ a:hover {
     margin-bottom: 16px;
   }
 }
+.people .item .family-name {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  .people .item .family-name {
+    display: inline-block;
+  }
+}
 .people .item .name {
   font-size: 16px;
   color: white;
@@ -190,6 +214,7 @@ a:hover {
 @media only screen and (max-width: 576px) {
   .people .item .name {
     font-size: 18px;
+    padding: 0px 1px;
     letter-spacing: 1;
     position: relative;
     bottom: auto;
@@ -219,6 +244,7 @@ a:hover {
   font-size: 56px;
   line-height: 1.5;
   margin-top: 16px;
+  margin-bottom: 32px;
   letter-spacing: 5;
   font-weight: 500;
   text-transform: uppercase;
@@ -226,6 +252,7 @@ a:hover {
 @media only screen and (max-width: 768px) {
   .small-title {
     font-size: 36px;
+    margin-bottom: 8px;
   }
 }
 .xsmall-title {

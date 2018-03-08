@@ -1,6 +1,6 @@
 $('#fullpage').fullpage({
     navigation: true,
-    scrollingSpeed: 700,
+    scrollingSpeed: 700
 });
 
 

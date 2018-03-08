@@ -18,6 +18,24 @@
     }
 }
 
+.footer {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: @primary-light;
+
+    position: absolute;
+    bottom: 24px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    img {
+        height: 14px;
+        text-align: center;
+        margin-bottom: 2px;
+    }
+}
+
 .info {
     font-size: 20px;
     letter-spacing: 1;
@@ -55,7 +73,7 @@ a {
     background-image: url("img/home.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1024px) {
         background-size: auto 100%;
     }
 }
@@ -72,7 +90,7 @@ a {
 
 .link {
     display: inline-block;
-    margin: 0px 16px;
+    margin: 16px;
     @media only screen and (max-width: 768px) {
         margin: 8px 16px;
     }
@@ -97,7 +115,7 @@ a {
     background-size: 100% auto;
 
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1024px) {
         background-size: auto 100%;
     }
     * {
@@ -183,6 +201,12 @@ a {
         @media only screen and (max-width: 1024px) {
             margin-bottom: 16px;
         }
+        .family-name{
+            display: none;
+            @media only screen and (max-width: 576px) {
+                display: inline-block;
+            }
+        }
         .name {
             font-size: 16px;
             color: white;
@@ -195,6 +219,7 @@ a {
             border-radius: 2px;
             @media only screen and (max-width: 576px) {
                 font-size: 18px;
+                padding: 0px 1px;
                 letter-spacing: 1;
                 position: relative;
                 bottom: auto;
@@ -244,11 +269,13 @@ a {
     font-size: 56px;
     line-height: 1.5;
     margin-top: 16px;
+    margin-bottom: 32px;
     letter-spacing: 5;
     font-weight: 500;
     text-transform: uppercase;
     @media only screen and (max-width: 768px) {
         font-size: 36px;
+        margin-bottom: 8px;
     }
 }
 
