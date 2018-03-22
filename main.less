@@ -73,8 +73,34 @@ a {
     background-image: url("img/home.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
+    background-position: center;
     @media only screen and (max-width: 1024px) {
         background-size: auto 100%;
+    }
+    @media only screen and (max-width: 700px) {
+        .display-control {
+            display: block;
+        }
+
+        .title-row {
+            margin-bottom: 24px;
+        }
+
+        .title-icon img {
+            width: 20px;
+        }
+
+        .big-title {
+            font-size: 72px;
+        }
+    }
+    @media only screen and (max-width: 560px) {
+        background-image: url("img/home1.jpg");
+        background-position: right;
+        .title-row {
+            margin-top: -160px;
+            margin-bottom: -8px;
+        }
     }
 }
 
@@ -201,7 +227,7 @@ a {
         @media only screen and (max-width: 1024px) {
             margin-bottom: 16px;
         }
-        .family-name{
+        .family-name {
             display: none;
             @media only screen and (max-width: 576px) {
                 display: inline-block;
@@ -305,22 +331,4 @@ a {
 
 .display-control {
     display: inline-block;
-}
-
-@media only screen and (max-width: 700px) {
-    .display-control {
-        display: block;
-    }
-
-    .title-row {
-        margin-bottom: 24px;
-    }
-
-    .title-icon img {
-        width: 20px;
-    }
-
-    .big-title {
-        font-size: 72px;
-    }
 }
