@@ -186,12 +186,11 @@ a:hover {
 }
 @media only screen and (max-width: 1000px) {
   .details .event img {
-    width: 64px;
+    width: 68px;
   }
 }
 @media only screen and (max-width: 768px) {
   .details .event img {
-    width: 56px;
     margin-bottom: 8px;
   }
 }
@@ -204,13 +203,11 @@ a:hover {
   .details .event .time {
     display: inline-block;
     font-weight: 400;
-    font-size: 16px;
   }
 }
 @media only screen and (max-width: 768px) {
   .details .event .to-do {
     display: inline-block;
-    font-size: 16px;
   }
 }
 .people {
