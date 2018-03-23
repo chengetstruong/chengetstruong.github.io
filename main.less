@@ -4,7 +4,7 @@
 }
 
 @primary-dark: #03144c;
-@primary-light: #91a1d4;
+@primary-light: #ffb4b4;
 @primary-white: #ffffff;
 
 * {
@@ -22,7 +22,7 @@
     font-family: 'Maven Pro', sans-serif;
     font-size: 14px;
     margin-bottom: 8px;
-    color: @primary-light;
+    // color: @primary-light;
 
     position: absolute;
     bottom: 24px;
@@ -152,9 +152,10 @@ a {
 }
 
 .wedding {
-    background-image: url("img/wedding.jpg");
+    background-image: url("img/wedding-1.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
+    background-position: center;
 
 
     @media only screen and (max-width: 1024px) {
@@ -205,7 +206,7 @@ a {
         }
         .time {
             font-weight: 700;
-            color: @primary-light;
+            
             margin-bottom: 0px;
             @media only screen and (max-width: 768px) {
                 display: inline-block;
@@ -214,6 +215,7 @@ a {
             }
         }
         .to-do {
+            color: @primary-light;
             // text-transform: uppercase;
             @media only screen and (max-width: 768px) {
                 display: inline-block;
@@ -331,7 +333,9 @@ a {
     }
 }
 
-
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background: @primary-dark;
+}
 
 
 .light-text {

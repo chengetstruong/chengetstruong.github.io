@@ -18,7 +18,6 @@
   font-family: 'Maven Pro', sans-serif;
   font-size: 14px;
   margin-bottom: 8px;
-  color: #91a1d4;
   position: absolute;
   bottom: 24px;
   width: 80%;
@@ -144,9 +143,10 @@ a:hover {
   color: #03144c;
 }
 .wedding {
-  background-image: url("img/wedding.jpg");
+  background-image: url("img/wedding-1.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-position: center;
 }
 @media only screen and (max-width: 1024px) {
   .wedding {
@@ -196,7 +196,6 @@ a:hover {
 }
 .details .event .time {
   font-weight: 700;
-  color: #91a1d4;
   margin-bottom: 0px;
 }
 @media only screen and (max-width: 768px) {
@@ -204,6 +203,9 @@ a:hover {
     display: inline-block;
     font-weight: 400;
   }
+}
+.details .event .to-do {
+  color: #ffb4b4;
 }
 @media only screen and (max-width: 768px) {
   .details .event .to-do {
@@ -268,10 +270,10 @@ a:hover {
   }
 }
 .information .link a {
-  border-bottom: 3px solid #91a1d4;
+  border-bottom: 3px solid #ffb4b4;
 }
 .information .link a:hover {
-  background: #91a1d4;
+  background: #ffb4b4;
   color: #ffffff;
 }
 .title-row {
@@ -307,8 +309,12 @@ a:hover {
     font-size: 24px;
   }
 }
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #03144c;
+}
 .light-text {
-  color: #91a1d4;
+  color: #ffb4b4;
 }
 .display-control {
   display: inline-block;
