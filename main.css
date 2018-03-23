@@ -91,6 +91,11 @@ a:hover {
     width: 16px;
   }
 }
+.home .rsvp:hover {
+  color: #ffffff;
+  background: #03144c;
+  border-color: #03144c;
+}
 @media only screen and (max-width: 1024px) {
   .home {
     background-size: auto 100%;
@@ -130,7 +135,7 @@ a:hover {
   }
 }
 .link a {
-  padding: 2px 8px 1px 8px;
+  padding: 4px 8px 2px 8px;
   font-weight: 500;
   font-family: 'Maven Pro', sans-serif;
   text-transform: uppercase;
@@ -155,6 +160,7 @@ a:hover {
 }
 .wedding * {
   color: #ffffff;
+  text-shadow: 0px 0px 6px rgba(3, 20, 76, 0.32);
 }
 .wedding .link a {
   border-bottom: 3px solid #ffffff;
@@ -165,7 +171,9 @@ a:hover {
   background: white;
 }
 .wedding .rsvp:hover {
-  color: white;
+  color: #03144c;
+  background: #ffffff;
+  border-color: #ffffff;
 }
 .details .event {
   letter-spacing: 1;
@@ -205,7 +213,7 @@ a:hover {
   }
 }
 .details .event .to-do {
-  color: #ffb4b4;
+  color: #fd8678;
 }
 @media only screen and (max-width: 768px) {
   .details .event .to-do {
@@ -213,7 +221,7 @@ a:hover {
   }
 }
 .people {
-  background: #fdf6f7;
+  background: rgba(253, 134, 120, 0.08);
 }
 .people .item {
   margin-bottom: 32px;
@@ -270,10 +278,10 @@ a:hover {
   }
 }
 .information .link a {
-  border-bottom: 3px solid #ffb4b4;
+  border-bottom: 3px solid #fd8678;
 }
 .information .link a:hover {
-  background: #ffb4b4;
+  background: #fd8678;
   color: #ffffff;
 }
 .title-row {
@@ -314,7 +322,7 @@ a:hover {
   background: #03144c;
 }
 .light-text {
-  color: #ffb4b4;
+  color: #fd8678;
 }
 .display-control {
   display: inline-block;

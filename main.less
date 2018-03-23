@@ -4,7 +4,7 @@
 }
 
 @primary-dark: #03144c;
-@primary-light: #ffb4b4;
+@primary-light: #fd8678; 
 @primary-white: #ffffff;
 
 * {
@@ -21,9 +21,7 @@
 .footer {
     font-family: 'Maven Pro', sans-serif;
     font-size: 14px;
-    margin-bottom: 8px;
-    // color: @primary-light;
-
+    margin-bottom: 8px; // color: @primary-light;
     position: absolute;
     bottom: 24px;
     width: 80%;
@@ -95,6 +93,13 @@ a {
             }
         }
     }
+    .rsvp {
+        &:hover {
+            color: @primary-white;
+            background: @primary-dark;
+            border-color: @primary-dark;
+        }
+    }
     @media only screen and (max-width: 1024px) {
         background-size: auto 100%;
     }
@@ -137,7 +142,7 @@ a {
         margin: 8px 16px;
     }
     a {
-        padding: 2px 8px 1px 8px;
+        padding: 4px 8px 2px 8px;
         font-weight: 500;
         font-family: 'Maven Pro', sans-serif;
         text-transform: uppercase; // letter-spacing: 1px;
@@ -163,6 +168,7 @@ a {
     }
     * {
         color: @primary-white;
+        text-shadow: 0px 0px 6px fade(@primary-dark, 32%);
     }
     .link {
         a {
@@ -176,7 +182,9 @@ a {
     }
     .rsvp {
         &:hover {
-            color: white;
+            color: @primary-dark;
+            background: @primary-white;
+            border-color: @primary-white;
         }
     }
 }
@@ -206,27 +214,24 @@ a {
         }
         .time {
             font-weight: 700;
-            
+
             margin-bottom: 0px;
             @media only screen and (max-width: 768px) {
                 display: inline-block;
-                font-weight: 400;
-                // font-size: 16px;
+                font-weight: 400; // font-size: 16px;
             }
         }
         .to-do {
-            color: @primary-light;
-            // text-transform: uppercase;
+            color: @primary-light; // text-transform: uppercase;
             @media only screen and (max-width: 768px) {
-                display: inline-block;
-                // font-size: 16px;
+                display: inline-block; // font-size: 16px;
             }
         }
     }
 }
 
 .people {
-    background: #fdf6f7;
+    background: fade(@primary-light, 8%);
     .small-title {
         // color: white;
     }
@@ -333,7 +338,8 @@ a {
     }
 }
 
-#fp-nav ul li a span, .fp-slidesNav ul li a span{
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
     background: @primary-dark;
 }
 
