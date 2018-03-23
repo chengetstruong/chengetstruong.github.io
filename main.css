@@ -50,7 +50,7 @@ a:hover {
   letter-spacing: 4px;
   padding: 4px 32px 3px 32px;
   background: none;
-  margin: 24px;
+  margin: 8px 24px;
   text-decoration: none;
   color: #03144c;
   display: inline-block;
@@ -65,23 +65,44 @@ a:hover {
   background-size: 100% auto;
   background-position: center;
 }
+.home .big-title {
+  font-family: 'northwell', 'Rochester', cursive;
+  font-size: 108px;
+  line-height: 1.5;
+  letter-spacing: 2;
+}
+@media only screen and (max-width: 700px) {
+  .home .big-title {
+    font-size: 64px;
+  }
+}
+.home .title-icon {
+  margin: auto 32px;
+}
+@media only screen and (max-width: 700px) {
+  .home .title-icon {
+    margin: auto 16px;
+  }
+}
+.home .title-icon img {
+  width: 32px;
+}
+@media only screen and (max-width: 700px) {
+  .home .title-icon img {
+    width: 16px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .home {
     background-size: auto 100%;
   }
 }
 @media only screen and (max-width: 700px) {
-  .home .display-control {
-    display: block;
-  }
   .home .title-row {
     margin-bottom: 24px;
   }
-  .home .title-icon img {
-    width: 20px;
-  }
   .home .big-title {
-    font-size: 72px;
+    font-size: 64px;
   }
 }
 @media only screen and (max-width: 560px) {
@@ -90,7 +111,7 @@ a:hover {
     background-position: right;
   }
   .home .title-row {
-    margin-top: -160px;
+    margin-top: -80px;
     margin-bottom: -8px;
   }
 }
@@ -154,7 +175,7 @@ a:hover {
 .details .event:last-child {
   border-right: none;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
   .details .event {
     border-right: none;
   }
@@ -259,11 +280,6 @@ a:hover {
 .title-row {
   margin-bottom: 16px;
 }
-.big-title {
-  font-family: 'northwell', 'Rochester', cursive;
-  font-size: 108px;
-  line-height: 1.5;
-}
 .small-title {
   font-family: 'Maven Pro', sans-serif;
   font-size: 56px;
@@ -293,10 +309,6 @@ a:hover {
   .xsmall-title {
     font-size: 24px;
   }
-}
-.title-icon img {
-  width: 32px;
-  margin: auto 32px;
 }
 .light-text {
   color: #91a1d4;

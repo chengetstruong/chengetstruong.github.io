@@ -58,7 +58,7 @@ a {
     letter-spacing: 4px;
     padding: 4px 32px 3px 32px;
     background: none;
-    margin: 24px;
+    margin: 8px 24px;
     text-decoration: none;
     color: @primary-dark;
     display: inline-block;
@@ -74,24 +74,40 @@ a {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
+    .big-title {
+        font-family: 'northwell', 'Rochester', cursive;
+        font-size: 108px;
+        line-height: 1.5;
+        letter-spacing: 2;
+        @media only screen and (max-width: 700px) {
+            font-size: 64px;
+        }
+    }
+    .title-icon {
+        margin: auto 32px;
+        @media only screen and (max-width: 700px) {
+            margin: auto 16px;
+        }
+        img {
+            width: 32px;
+            @media only screen and (max-width: 700px) {
+                width: 16px;
+            }
+        }
+    }
     @media only screen and (max-width: 1024px) {
         background-size: auto 100%;
     }
     @media only screen and (max-width: 700px) {
-        .display-control {
-            display: block;
-        }
-
+        // .display-control {
+        //     display: block;
+        // }
         .title-row {
             margin-bottom: 24px;
         }
 
-        .title-icon img {
-            width: 20px;
-        }
-
         .big-title {
-            font-size: 72px;
+            font-size: 64px;
         }
     }
     @media only screen and (max-width: 560px) {
@@ -283,11 +299,7 @@ a {
     margin-bottom: 16px;
 }
 
-.big-title {
-    font-family: 'northwell', 'Rochester', cursive;
-    font-size: 108px;
-    line-height: 1.5;
-}
+
 
 .small-title {
     // font-family: 'northwell', 'Rochester', cursive;
@@ -319,10 +331,7 @@ a {
     }
 }
 
-.title-icon img {
-    width: 32px;
-    margin: auto 32px;
-}
+
 
 
 .light-text {
