@@ -15,7 +15,6 @@
   }
 }
 .footer {
-  font-family: 'Maven Pro', sans-serif;
   font-size: 14px;
   margin-bottom: 8px;
   position: absolute;
@@ -25,7 +24,7 @@
   transform: translateX(-50%);
 }
 .footer img {
-  height: 14px;
+  height: 12px;
   text-align: center;
   margin-bottom: 2px;
 }
