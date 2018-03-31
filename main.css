@@ -161,6 +161,9 @@ a:hover {
   color: #ffffff;
   text-shadow: 0px 0px 6px rgba(3, 20, 76, 0.32);
 }
+.wedding .link {
+  margin-bottom: 32px;
+}
 .wedding .link a {
   border-bottom: 3px solid #ffffff;
   color: #ffffff;
@@ -173,6 +176,11 @@ a:hover {
   color: #03144c;
   background: #ffffff;
   border-color: #ffffff;
+}
+.wedding .reminder {
+  font-family: 'Maven Pro', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1;
 }
 .details .event {
   letter-spacing: 1;
