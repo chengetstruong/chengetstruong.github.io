@@ -178,8 +178,7 @@ a:hover {
   border-color: #ffffff;
 }
 .wedding .reminder {
-  font-family: 'Maven Pro', sans-serif;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 1;
 }
 .details .event {
